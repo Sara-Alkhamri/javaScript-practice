@@ -123,4 +123,38 @@ var collection = {
 
 //First checks if prop is equal to tracks AND if value isn’t a blank string. If both tests pass, value is pushed into the tracks array.
 //If that first check doesn’t pass, it next checks only if value isn’t a blank string. If that test passes, either a new key (prop) and value (value) are added to the object, or an existing key is updated if the prop already exists.
-//If both these checks fail (meaning value must be an empty string), then the key (prop) is removed from the object.  
+//If both these checks fail (meaning value must be an empty string), then the key (prop) is removed from the object. 
+
+//While Loops:
+
+// Iterate with JavaScript While Loops
+// You can run the same code multiple times by using a loop.
+
+// The first type of loop we will learn is called a while loop because it runs "while" a specified condition is true and stops once that condition is no longer true.
+
+// var ourArray = [];
+// var i = 0;
+// while(i < 5) {
+//   ourArray.push(i);
+//   i++;
+// }
+// In the code example above, the while loop will execute 5 times and append the numbers 0 through 4 to ourArray.
+
+// Let's try getting a while loop to work by pushing values to an array.
+
+// Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
+
+// Solution:
+
+// Setup
+var myArray = [];
+
+// Only change code below this line
+
+var i = 5;
+while(i >= 0) {
+  myArray.push(i)
+  i--
+}
+
+
