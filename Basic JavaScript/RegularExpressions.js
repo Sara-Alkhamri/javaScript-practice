@@ -103,3 +103,27 @@ let result = fccRegex.test(myString);
 let extractStr = "Extract the word 'coding' from this string.";
 let codingRegex = /coding/; // Change this line
 let result = extractStr.match(/coding/); // Change this line
+
+// Find More Than the First Match
+// So far, you have only been able to extract or search a pattern once.
+
+let testStr = "Repeat, Repeat, Repeat";
+let ourRegex = /Repeat/;
+testStr.match(ourRegex);
+// // Returns ["Repeat"]
+// To search or extract a pattern more than once, you can use the g flag.
+
+let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex);
+// // Returns ["Repeat", "Repeat", "Repeat"]
+// Using the regex starRegex, find and extract both "Twinkle" words from the string twinkleStar.
+
+// Note
+// You can have multiple flags on your regex like /search/gi
+
+//Solution:
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line
+
